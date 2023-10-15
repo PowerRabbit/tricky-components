@@ -51,7 +51,7 @@ export class SimpleForm extends LitElement {
 
     override render() {
         return html`
-        <form id="aaa">
+        <form>
             <slot></slot>
         </form>
     `;
