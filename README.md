@@ -1,6 +1,11 @@
 # An conceptual implementation of some tricky custom elements
 
 ## Available elements
+### [Simple calendar](https://github.com/PowerRabbit/tricky-components/tree/master/src/simple-calendar)
+```Typescript
+<simple-calendar></simple-calendar>
+```
+
 ### [Simple form](https://github.com/PowerRabbit/tricky-components/tree/master/src/simple-form)
 - Requires [Simple form input](https://github.com/PowerRabbit/tricky-components/tree/master/src/simple-form-input)
 - Emits [FormData](https://developer.mozilla.org/en-US/docs/Web/API/FormData) on submit.
