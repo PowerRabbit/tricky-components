@@ -67,13 +67,25 @@ export class MyElement extends LitElement {
                     <p>Item 2 description.</p>
                 </simple-accordion-item>
                 <simple-accordion-item>
-                        <div slot="summary">Item 2</div>
-                        <p>Item 2 description.</p>
-                    </simple-accordion-item>
-                </simple-accordion>
+                    <div slot="summary">Item 2</div>
+                    <p>Item 2 description.</p>
+                </simple-accordion-item>
+            </simple-accordion>
 
             <h2>Simple Toggle</h2>
             <simple-toggle simple-checked></simple-toggle>
+
+            <br>
+            <br>
+            <label>
+                Press me
+                <simple-toggle></simple-toggle>
+            </label>
+            <br>
+            <br>
+            <label id="externalLabelId">and me</label>, press me as well!
+            <simple-toggle simple-external-label-id="externalLabelId"></simple-toggle>
+
         `;
     }
 }

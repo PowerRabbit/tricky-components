@@ -42,7 +42,11 @@ export class SimpleToggle extends LitElement {
         });
 
         if (this.simpleExternalLabelId) {
-            this.outerLabel = document.getElementById(this.simpleExternalLabelId) as HTMLLabelElement;
+            if (this.parentNode?.nodeType === 11) {
+                this.outerLabel = (this.parentNode as DocumentFragment).getElementById(this.simpleExternalLabelId) as HTMLLabelElement;
+            } else {
+                this.outerLabel = document.getElementById(this.simpleExternalLabelId) as HTMLLabelElement;
+            }
         } else {
             this.outerLabel = this.closest('label') as HTMLLabelElement;
             if (this.outerLabel && !this.simpleAriaLabel) {
