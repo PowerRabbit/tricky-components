@@ -41,7 +41,7 @@
 ```
 
 ### [Simple accordion](https://github.com/PowerRabbit/tricky-components/tree/master/src/simple-accordion)
-- Requires [Simple form input](https://github.com/PowerRabbit/tricky-components/tree/master/src/simple-accordion-item)
+- Requires [Simple accordion item](https://github.com/PowerRabbit/tricky-components/tree/master/src/simple-accordion-item)
 ```HTML
 <simple-accordion>
     <simple-accordion-item sa-open>
