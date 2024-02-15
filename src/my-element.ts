@@ -6,11 +6,13 @@ import './simple-calendar/simple-calendar.component';
 import './simple-dialog/simple-dialog.component';
 import './simple-accordion/simple-accordion.component';
 import './simple-accordion-item/simple-accordion-item.component';
+import './simple-toggle/simple-toggle.component';
 import { SimpleForm } from './simple-form/simple-form.component';
 import { SimpleCalendar } from './simple-calendar/simple-calendar.component';
 import { SimpleDialog } from './simple-dialog/simple-dialog.component';
 import { SimpleAccordion } from './simple-accordion/simple-accordion.component';
 import { SimpleAccordionItem } from './simple-accordion-item/simple-accordion-item.component';
+import { SimpleToggle } from './simple-toggle/simple-toggle.component';
 
 @customElement('my-element')
 export class MyElement extends LitElement {
@@ -56,20 +58,22 @@ export class MyElement extends LitElement {
 
             <h2>Simple Accordion</h2>
             <simple-accordion>
-                    <simple-accordion-item sa-open>
-                        <div slot="summary">Item 1</div>
-                        <p>Item 1 description.</p>
-                    </simple-accordion-item>
-                    <simple-accordion-item>
-                        <div slot="summary">Item 2</div>
-                        <p>Item 2 description.</p>
-                    </simple-accordion-item>
-                    <simple-accordion-item>
+                <simple-accordion-item sa-open>
+                    <div slot="summary">Item 1</div>
+                    <p>Item 1 description.</p>
+                </simple-accordion-item>
+                <simple-accordion-item>
+                    <div slot="summary">Item 2</div>
+                    <p>Item 2 description.</p>
+                </simple-accordion-item>
+                <simple-accordion-item>
                         <div slot="summary">Item 2</div>
                         <p>Item 2 description.</p>
                     </simple-accordion-item>
                 </simple-accordion>
 
+            <h2>Simple Toggle</h2>
+            <simple-toggle simple-checked></simple-toggle>
         `;
     }
 }
@@ -82,6 +86,7 @@ declare global {
         'simple-dialog': SimpleDialog;
         'simple-accordion': SimpleAccordion;
         'simple-accordion-item': SimpleAccordionItem;
+        'simple-toggle': SimpleToggle;
   }
 }
 
