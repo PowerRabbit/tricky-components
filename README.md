@@ -1,4 +1,4 @@
-# An conceptual implementation of some tricky custom elements
+# An conceptual implementation of some custom elements
 
 ## Available elements
 ### [Simple calendar](https://github.com/PowerRabbit/tricky-components/tree/master/src/simple-calendar)
